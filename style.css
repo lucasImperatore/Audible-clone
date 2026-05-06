@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 80px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+
+#title{
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    font-size: larger;
+    margin-left: 90%;
+}
+
+#helpEntry{
+    display: flex;
+    align-items: center;
+    margin-left: 80%;
+}
+
+#help{
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: larger;
+    border: none;
+}
+
+#entry{
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: orange;
+    font-size: larger;
+    border: none;
+
+}
+
+#search{
+    width: 100vw;
+    height: 50px;
+    background-color:white;
+    display: flex;
+}
+
+#searchBtn{
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: larger;
+    border: none;
+    margin-left:70px;
+}
+
+#inputSearch{
+    height: 50px;
+    width: 25%;
+    font-size: larger;
+    margin-left: 60%;
+}
+
+#imgs{
+    
+    width: 100vw;
+    height: 900px;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+
+}

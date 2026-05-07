@@ -30,15 +30,17 @@ header{
     border-radius: 20px;
     font-size: larger;
     border: none;
+    
 }
 
 #entry{
     height: 50px;
-    width: 80px;
-    border-radius: 20px;
+    width: 90px;
+    border-radius: 50px;
     background-color: orange;
     font-size: larger;
     border: none;
+    margin: 25px;
 
 }
 
@@ -69,8 +71,103 @@ header{
     
     width: 100vw;
     height: 900px;
-    background-color:blue;
+    background-color:white;
     display: flex;
     align-items: center;
+
+}
+
+#field1{
+    width: 50%;
+    height: 100%;
+    display: flex;          
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;     
+  min-height: 300px;      
+  gap: 20px;
+    font-size: xx-large;
+
+}
+
+#freeTry{
+    height: 80px;
+    width: 420px;
+    border-radius: 60px;
+    background-color: orange;
+    font-size: xx-large;
+    border: none;
+}
+
+
+
+#img{
+    height: 90%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+}
+
+p{
+    justify-content: center;
+}
+
+.about3{
+    height: 200px;
+    width: 420px;
+    border-radius: 60px;
+    background-color: rgb(52, 52, 58);
+    font-size: xx-large;
+    border: none;
+    margin: 25px;
+}
+
+.about1{
+    height:200px;
+    width: 420px;
+    border-radius: 60px;
+    background-color: rgb(56, 134, 134);
+    font-size: xx-large;
+    border: none;
+    margin: 25px;
+}
+
+.about2{
+    height: 200px;
+    width: 420px;
+    border-radius: 60px;
+    background-color: rgb(87, 112, 223);
+    font-size: xx-large;
+    border: none;
+    margin: 25px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    width: 100vw;
+    height: 1800px;
+    background-color: black;
+}
+
+#month{
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    margin-left: 20%;
+  
+
+}
+
+#presentation{
+    width: 100vw;
+    height: 400px;
+    background-color: aliceblue;
+    margin-top: 100px;
 
 }

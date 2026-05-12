@@ -104,7 +104,7 @@ header{
 
 #img{
     height: 90%;
-    width: 50%;
+    width: 40%;
     background-color: white;
     display: flex;
 }
@@ -159,7 +159,7 @@ p{
 }
 
 #month{
-    width: 100vw;
+    width: 60vw;
     height: 160px;
     display: flex;
     margin-left: 20%;
@@ -196,21 +196,88 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.carousel-button {
- 
-  padding: 10px 20px;
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  border-color: none;
+/* Container principal que segura todos os livros */
+.audible-carousel {
+  display: flex;
+  gap: 20px; /* Espaço entre os livros */
+  padding: 20px;
+  background-color: #000; /* Fundo preto igual ao da Audible */
+  overflow-x: auto; /* Permite scroll horizontal se faltar espaço */
+  position: relative;
+  align-items: flex-start;
 }
 
-#carousel{
+/* Estilização do Card */
+.book-card {
+  min-width: 400px; /* Largura fixa para manter o formato */
+  max-width: 400px;
+  cursor: pointer;
+}
+
+/* A imagem do livro */
+.cover-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Garante que a imagem seja sempre um quadrado perfeito */
+  border-radius: 12px; /* Cantos arredondados suaves */
+  overflow: hidden; /* Corta a imagem para obedecer o arredondamento */
+  margin-bottom: 10px;
+}
+
+.cover-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o quadrado sem distorcer */
+}
+
+/* Textos abaixo da imagem */
+.book-info .title {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 5px 0;
+  display: -webkit-box; /* Truque para cortar o texto em 2 linhas com "..." */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-info .author {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.book-info .author span {
+  color: #4daafc; /* Cor azulada para o nome do autor */
+}
+
+/* Botão Flutuante (O círculo com a seta) */
+.nav-button {
+  position: absolute;
+  right: 10px;
+  top: 40%; /* Centraliza verticalmente em relação às capas */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(35, 47, 62, 0.9); /* Azul escuro semi-transparente */
+  color: white;
+  border: 1px solid #444;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.grid{
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 5vw;
+    height: 10px;
+    background-color: black
 }
+
 
 
 

@@ -78,7 +78,7 @@ header{
 }
 
 #field1{
-    width: 50%;
+    width: 50vw;
     height: 100%;
     display: flex;          
   flex-direction: column; 
@@ -104,7 +104,7 @@ header{
 
 #img{
     height: 90%;
-    width: 40%;
+    width: 40vw;
     background-color: white;
     display: flex;
 }
@@ -159,10 +159,12 @@ p{
 }
 
 #month{
-    width: 60vw;
+    width: 100vw;
     height: 160px;
     display: flex;
-    margin-left: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   
 
 }
@@ -196,21 +198,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Container principal que segura todos os livros */
-.audible-carousel {
-  display: flex;
-  gap: 20px; /* Espaço entre os livros */
-  padding: 20px;
-  background-color: #000; /* Fundo preto igual ao da Audible */
-  overflow-x: auto; /* Permite scroll horizontal se faltar espaço */
-  position: relative;
-  align-items: flex-start;
-}
-
 /* Estilização do Card */
 .book-card {
-  min-width: 400px; /* Largura fixa para manter o formato */
-  max-width: 400px;
+  min-width: 300px; /* Largura fixa para manter o formato */
+  max-width: 300px;
   cursor: pointer;
 }
 
@@ -230,54 +221,25 @@ body{
   object-fit: cover; /* Faz a imagem preencher o quadrado sem distorcer */
 }
 
-/* Textos abaixo da imagem */
-.book-info .title {
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin: 5px 0;
-  display: -webkit-box; /* Truque para cortar o texto em 2 linhas com "..." */
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.book-info .author {
-  color: #ccc;
-  font-size: 0.8rem;
-}
-
-.book-info .author span {
-  color: #4daafc; /* Cor azulada para o nome do autor */
-}
-
-/* Botão Flutuante (O círculo com a seta) */
-.nav-button {
-  position: absolute;
-  right: 10px;
-  top: 40%; /* Centraliza verticalmente em relação às capas */
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: rgba(35, 47, 62, 0.9); /* Azul escuro semi-transparente */
-  color: white;
-  border: 1px solid #444;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.grid{
-    display: flex;
+.w{
+    font-size:xx-large;
+    color: white;
+     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    width: 5vw;
-    height: 10px;
-    background-color: black
+    margin-top: 80px;
+
+}
+#ativits{
+    width:100vw;
+    font-size: x-large;
+   
 }
 
+.cardAli{
+    display: flex;
+    align-items: center;
+}
 
 
 
